@@ -1,309 +1,322 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Trivago</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivago</title>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="second.css">
-<link rel="stylesheet" href="//jsa.trivago.com/_assets/osp/vAssets/es5/stable-styles-css.0bf88368190858fd16303c33d5e91093.ak.css" />
-<link rel="stylesheet" href="//jsa.trivago.com/_assets/osp/vAssets/es5/main-styles-css.a226c20b9be2857804e527954e92b6ad.ak.css" />
-<link rel="stylesheet" href="//jsa.trivago.com/_assets/osp/vAssets/es5/pricesearch-css.d80d9fc744f2b58309f69cc499875497.ak.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- <img src="trivago-logo.png"style="top:20px;float:center;"class="text-center" width="200px"alt="logo"> -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="//jsa.trivago.com/_assets/osp/vAssets/es5/stable-styles-css.0bf88368190858fd16303c33d5e91093.ak.css" />
+    <link rel="stylesheet" href="//jsa.trivago.com/_assets/osp/vAssets/es5/main-styles-css.a226c20b9be2857804e527954e92b6ad.ak.css" />
+    <link rel="stylesheet" href="//jsa.trivago.com/_assets/osp/vAssets/es5/pricesearch-css.d80d9fc744f2b58309f69cc499875497.ak.css" />
+</head>
 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-       <a class="navbar-brand" href="#"><svg version="1.1" viewBox="0 0 102 32" role="img" focusable="false" tabindex="-1" aria-labelledby="header-logo-id" class="siteheader__logo" height="32" width="102"><title id="header-logo-id">trivago</title><path d="M33.706,6.989h5.441l4.133,11.149h0.066l3.83-11.149h5.071L45.8,23.377h-5.34" fill="#f48f00"></path><path d="M13.971,11.018H9V16.5c0,0.93.082,2.119,0.959,2.655a4.649,4.649,0,0,0,2.9.283,2.242,2.242,0,0,0,1.107-.386v4.2a10.114,10.114,0,0,1-1.938.4c-3.556.359-8.54-.253-8.54-4.838v-7.8H0V6.988H3.492V2.153H9V6.989h4.97v4.03Zm14.1-4.03h4.97V23.377h-4.97V6.989Zm-0.2-4.311a2.676,2.676,0,1,1,5.351,0,2.677,2.677,0,0,1-5.353,0" fill="#007faf"></path><path d="M90.124,15.195c0,2.215,1.289,4.13,3.648,4.13s3.647-1.915,3.647-4.131-1.287-4.133-3.647-4.133-3.647,1.917-3.648,4.134m-4.556,0a8.224,8.224,0,0,1,14.711-5.43,9.491,9.491,0,0,1,.687,9.766,8.214,8.214,0,0,1-15.4-4.336" fill="#c94a38"></path><path d="M80.24,6.973v2.2H80.164a3.041,3.041,0,0,0-.574-0.613c-3.254-2.8-8.812-2.238-10.915,1.679a11.506,11.506,0,0,0-.924,6.812c0.283,2.077,1.05,4.275,2.879,5.478a7.739,7.739,0,0,0,6.936.71,4.8,4.8,0,0,0,2.075-1.572H79.7v1.588a3.9,3.9,0,0,1-.984,2.881c-1.449,1.493-4.218,1.4-6.079.894a9.223,9.223,0,0,1-2.914-1.307l-2.451,3.6a11.307,11.307,0,0,0,3.906,1.9c3.583,0.949,8.543.928,11.312-1.921,1.561-1.606,2.2-3.96,2.2-7.06V6.971H80.242ZM78.984,18.2a3.707,3.707,0,0,1-5.4,0,5.013,5.013,0,0,1,0-6,3.707,3.707,0,0,1,5.4,0,5.011,5.011,0,0,1,0,6c-0.639.763,0.641-.763,0,0v0Z" fill="#c94a38"></path><path d="M15.314,6.989h5.105V9.675h0.051A5.715,5.715,0,0,1,22.384,7.4a6.338,6.338,0,0,1,4.482-.6v4.6c-1.029-.278-3.2-0.715-4.717.211-0.96.586-1.731,1.288-1.731,4.929v6.839H15.313V6.989h0Z" fill="#007faf"></path><path d="M56.992,16.844c-1,.62-1.683,1.829-0.763,2.775,0.9,0.922,2.522.829,3.632,0.441a2.98,2.98,0,0,0,2.2-2.784V16.258c0.017,0-3.794-.208-5.069.585h0Zm5.07,4.518H61.969a5.079,5.079,0,0,1-2.232,1.852c-3.563,1.464-8.748-.019-8.75-4.492,0-4.655,5.07-5.606,8.784-5.712,0.817-.021,1.572-0.034,2.267-0.034a2.62,2.62,0,0,0-.957-2.132,4.243,4.243,0,0,0-4.535-.268A6.2,6.2,0,0,0,54.716,12L52.028,9.248A9.255,9.255,0,0,1,55.32,7.282a11.844,11.844,0,0,1,7.044-.27,5.625,5.625,0,0,1,3.952,4.437,17.479,17.479,0,0,1,.314,3.61v8.317H62.063V21.362h0Z" fill="#f48f00"></path></svg></a>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li style="border-left:1px solid #f1f1f1;"><a href="#">INR</a></li>
-        <li style="border-left:1px solid #f1f1f1;"class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="hero__content" style="background-color:#212121">
-  <br>
-    <form class="horus__form horus__form--tag-box" action="/search/search" method="POST">
-        <div class="dealform">
-            <div class="horus__table">
-                <div class="horus__table horus__cell--query js-query">
-                    <div class="horus__row horus__row--query">
-                        <div class="horus__query-wrap horus__col">
-                            <input aria-labelledby="horus-search-label" id="horus-shadowtext" type="text" class="horus__shadowtext" disabled="disabled" readonly="readonly" aria-hidden="true" tabindex="-1" value="">
-                            <label for="horus-querytext" id="horus-search-label" class="visuallyhidden horus-querytext__label">Search</label>
-                            <div class="horus__icon-wrap"><span class="icon-ic horus__input-icon"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" baseProfile="tiny" viewBox="0 0 24 24"><path class="svg-color--primary" fill="#37454D" d="M10 4c3.308 0 6 2.692 6 6s-2.692 6-6 6-6-2.692-6-6 2.692-6 6-6m0-2a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"></path><path class="svg-color--secondary" fill="none" stroke="#37454D" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M21 21l-6-6"></path></svg></span></div>
-                            <input type="search" value="Lonavala" role="combobox" aria-autocomplete="both" aria-owns="ssg-suggestions" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" name="sQuery" class="input horus__querytext" id="horus-querytext">
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- <img src="trivago-logo.png"style="top:20px;float:center;"class="text-center" width="200px"alt="logo"> -->
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <svg version="1.1" viewBox="0 0 102 32" role="img" focusable="false" tabindex="-1" aria-labelledby="header-logo-id" class="siteheader__logo" height="32" width="102">
+                        <title id="header-logo-id">trivago</title>
+                        <path d="M33.706,6.989h5.441l4.133,11.149h0.066l3.83-11.149h5.071L45.8,23.377h-5.34" fill="#f48f00"></path>
+                        <path d="M13.971,11.018H9V16.5c0,0.93.082,2.119,0.959,2.655a4.649,4.649,0,0,0,2.9.283,2.242,2.242,0,0,0,1.107-.386v4.2a10.114,10.114,0,0,1-1.938.4c-3.556.359-8.54-.253-8.54-4.838v-7.8H0V6.988H3.492V2.153H9V6.989h4.97v4.03Zm14.1-4.03h4.97V23.377h-4.97V6.989Zm-0.2-4.311a2.676,2.676,0,1,1,5.351,0,2.677,2.677,0,0,1-5.353,0" fill="#007faf"></path>
+                        <path d="M90.124,15.195c0,2.215,1.289,4.13,3.648,4.13s3.647-1.915,3.647-4.131-1.287-4.133-3.647-4.133-3.647,1.917-3.648,4.134m-4.556,0a8.224,8.224,0,0,1,14.711-5.43,9.491,9.491,0,0,1,.687,9.766,8.214,8.214,0,0,1-15.4-4.336" fill="#c94a38"></path>
+                        <path d="M80.24,6.973v2.2H80.164a3.041,3.041,0,0,0-.574-0.613c-3.254-2.8-8.812-2.238-10.915,1.679a11.506,11.506,0,0,0-.924,6.812c0.283,2.077,1.05,4.275,2.879,5.478a7.739,7.739,0,0,0,6.936.71,4.8,4.8,0,0,0,2.075-1.572H79.7v1.588a3.9,3.9,0,0,1-.984,2.881c-1.449,1.493-4.218,1.4-6.079.894a9.223,9.223,0,0,1-2.914-1.307l-2.451,3.6a11.307,11.307,0,0,0,3.906,1.9c3.583,0.949,8.543.928,11.312-1.921,1.561-1.606,2.2-3.96,2.2-7.06V6.971H80.242ZM78.984,18.2a3.707,3.707,0,0,1-5.4,0,5.013,5.013,0,0,1,0-6,3.707,3.707,0,0,1,5.4,0,5.011,5.011,0,0,1,0,6c-0.639.763,0.641-.763,0,0v0Z" fill="#c94a38"></path>
+                        <path d="M15.314,6.989h5.105V9.675h0.051A5.715,5.715,0,0,1,22.384,7.4a6.338,6.338,0,0,1,4.482-.6v4.6c-1.029-.278-3.2-0.715-4.717.211-0.96.586-1.731,1.288-1.731,4.929v6.839H15.313V6.989h0Z" fill="#007faf"></path>
+                        <path d="M56.992,16.844c-1,.62-1.683,1.829-0.763,2.775,0.9,0.922,2.522.829,3.632,0.441a2.98,2.98,0,0,0,2.2-2.784V16.258c0.017,0-3.794-.208-5.069.585h0Zm5.07,4.518H61.969a5.079,5.079,0,0,1-2.232,1.852c-3.563,1.464-8.748-.019-8.75-4.492,0-4.655,5.07-5.606,8.784-5.712,0.817-.021,1.572-0.034,2.267-0.034a2.62,2.62,0,0,0-.957-2.132,4.243,4.243,0,0,0-4.535-.268A6.2,6.2,0,0,0,54.716,12L52.028,9.248A9.255,9.255,0,0,1,55.32,7.282a11.844,11.844,0,0,1,7.044-.27,5.625,5.625,0,0,1,3.952,4.437,17.479,17.479,0,0,1,.314,3.61v8.317H62.063V21.362h0Z" fill="#f48f00"></path>
+                    </svg>
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="border-left:1px solid #f1f1f1;"><a href="#">INR</a></li>
+                    <li style="border-left:1px solid #f1f1f1;" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="hero__content" style="background-color:#212121">
+        <br>
+        <form class="horus__form horus__form--tag-box" action="/search/search" method="POST">
+            <div class="dealform">
+                <div class="horus__table">
+                    <div class="horus__table horus__cell--query js-query">
+                        <div class="horus__row horus__row--query">
+                            <div class="horus__query-wrap horus__col">
+                                <input aria-labelledby="horus-search-label" id="horus-shadowtext" type="text" class="horus__shadowtext" disabled="disabled" readonly="readonly" aria-hidden="true" tabindex="-1" value="">
+                                <label for="horus-querytext" id="horus-search-label" class="visuallyhidden horus-querytext__label">Search</label>
+                                <div class="horus__icon-wrap"><span class="icon-ic horus__input-icon"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" baseProfile="tiny" viewBox="0 0 24 24"><path class="svg-color--primary" fill="#37454D" d="M10 4c3.308 0 6 2.692 6 6s-2.692 6-6 6-6-2.692-6-6 2.692-6 6-6m0-2a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"></path><path class="svg-color--secondary" fill="none" stroke="#37454D" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M21 21l-6-6"></path></svg></span></div>
+                                <input type="search" value="Lonavala" role="combobox" aria-autocomplete="both" aria-owns="ssg-suggestions" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" name="sQuery" class="input horus__querytext" id="horus-querytext">
+                            </div>
+                            <div class="horus__col horus__col--search">
+                                <button ref="searchButton" class="btn btn--primary horus-btn-search"><span class="horus-btn-search__icon icon-ic icon-contain icon-bg-icn_search_light"><span class="horus-btn-search__label">Search</span></span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="horus__col horus__col--search">
-                            <button ref="searchButton" class="btn btn--primary horus-btn-search"><span class="horus-btn-search__icon icon-ic icon-contain icon-bg-icn_search_light"><span class="horus-btn-search__label">Search</span></span>
+                    </div>
+                </div>
+                <div class="horus__table horus__cell--detail">
+                    <div class="horus__row horus__row--detail">
+                        <div class="horus__col horus__col--checkin">
+                            <button class="btn btn-horus horus__btn-detail horus__btn-detail--calendar btn-horus--checkin" type="button"><span class="icon-ic btn-horus__icon btn-horus__icon--checkin icon-center"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="18" height="16" viewBox="0 0 18 16"><g class="svg-color--primary" fill="#37454D"><path d="M16 1h-1c0-.552-.448-1-1-1s-1 .448-1 1H5c0-.552-.448-1-1-1S3 .448 3 1H2C.896 1 0 1.895 0 3v11c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2V3c0-1.105-.896-2-2-2zm1 13c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5h16v9zm0-10H1V3c0-.552.45-1 1-1h14c.552 0 1 .448 1 1v1z"></path><circle cx="4.5" cy="8.5" r="1.5"></circle></g></svg></span><span class="btn-horus__content"><span class="btn-horus__type">Check-in</span>
+                                <time class="btn-horus__value" datetime="2018-07-21">Saturday, 21-07-2018</time>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="horus__col horus__col--checkout">
+                            <button class="btn btn-horus horus__btn-detail horus__btn-detail--calendar btn-horus--checkout" type="button"><span class="icon-ic btn-horus__icon btn-horus__icon--checkout icon-center"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="18" height="16" viewBox="0 0 18 16"><g class="svg-color--primary" fill="#37454D"><path d="M16 1h-1c0-.552-.448-1-1-1s-1 .448-1 1H5c0-.552-.448-1-1-1S3 .448 3 1H2C.896 1 0 1.896 0 3v11c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2V3c0-1.104-.896-2-2-2zm1 13c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5h16v9zm0-10H1V3c0-.552.45-1 1-1h14c.552 0 1 .448 1 1v1z"></path><circle cx="13.5" cy="11.5" r="1.5"></circle></g></svg></span><span class="btn-horus__content"><span class="btn-horus__type">Check-out</span>
+                                <time class="btn-horus__value" datetime="2018-07-22">Sunday, 22-07-2018</time>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="horus__col horus__col--roomtype" key="roomsButton">
+                            <button class="btn btn-horus btn-horus--roomtype horus__btn-detail horus__btn-detail--roomtype" type="button"><span class="btn-horus__content-wrap"><span class="icon-ic btn-horus__icon icon-rtl"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="20" height="16" viewBox="0 0 20 16"><g class="svg-color--primary" fill="#37454D"><path d="M17.3 6.25c.45-.65.7-1.45.7-2.25 0-2.2-1.8-4-4-4-1.15 0-2.2.5-2.95 1.3.25.2.5.45.7.7.55-.65 1.35-1 2.25-1 1.65 0 3 1.35 3 3 0 .8-.3 1.5-.8 2-.55.6-1.35 1-2.2 1-.4 0-.8-.1-1.15-.25 0 .1-.05.15-.05.25-.05.2-.1.4-.2.6.2.1.4.2.55.3.25.05.55.1.85.1 1 0 1.9-.35 2.6-.95C18 7.3 19 8.55 19 10c0 .55-.45 1-1 1h-2.35c.1.3.2.65.25 1H18c1.1 0 2-.9 2-2 0-1.75-1.1-3.25-2.7-3.75z"></path><path d="M14.95 12.3c0-.05 0-.1-.05-.15v-.05-.05c0-.1-.05-.2-.05-.3-.05-.1-.05-.25-.1-.35s-.1-.25-.15-.35c-.05-.15-.1-.25-.2-.4-.2-.4-.45-.75-.75-1.05l-.3-.3c-.2-.2-.4-.35-.65-.5-.45-.3-1-.5-1.55-.65.05-.1.15-.2.2-.3.15-.2.25-.4.3-.6.05-.05.05-.15.1-.2 0-.05.05-.05.05-.1 0-.1.05-.15.05-.25.05-.15.1-.35.1-.5V6c0-.15.05-.35.05-.5 0-.95-.3-1.85-.8-2.55-.2-.3-.45-.6-.75-.8C9.7 1.4 8.65 1 7.5 1 5 1 3 3 3 5.5c0 .25 0 .45.05.7.05.15.05.35.1.5 0 .1.05.15.05.25.05.1.1.2.15.35l.3.6c.05.1.15.2.2.3-.55.15-1.05.35-1.55.65-.25.15-.45.3-.65.5l-.3.3c-.55.6-1 1.35-1.2 2.15-.05.2-.1.45-.15.75V13c0 1.65 1.35 3 3 3h9c1.65 0 3-1.35 3-3v-.45c-.05-.1-.05-.2-.05-.25zM7.5 2c1.05 0 1.95.45 2.6 1.15.55.6.9 1.45.9 2.35 0 .2 0 .45-.05.65 0 .1-.05.2-.1.35-.1.35-.25.7-.45 1-.15.2-.3.35-.45.5-.15.15-.3.25-.45.4-.4.25-.85.45-1.3.55-.25.05-.5.05-.7.05-.95 0-1.8-.4-2.45-1C4.4 7.35 4 6.5 4 5.5 4 3.55 5.55 2 7.5 2zM12 15H3c-1.1 0-2-.9-2-2 0-2.1 1.65-3.85 3.7-4 .75.65 1.75 1 2.8 1 .15 0 .35 0 .5-.05.35-.05.7-.1 1-.25.45-.15.9-.4 1.3-.75 1.35.1 2.5.9 3.15 2 .2.3.3.65.4 1 .1.3.15.65.15 1 0 1.15-.9 2.05-2 2.05z"></path></g></svg></span><span class="btn-horus__content"><span class="btn-horus__value">Double room</span></span>
+                                </span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="horus__table horus__cell--detail">
-                <div class="horus__row horus__row--detail">
-                    <div class="horus__col horus__col--checkin">
-                        <button class="btn btn-horus horus__btn-detail horus__btn-detail--calendar btn-horus--checkin" type="button"><span class="icon-ic btn-horus__icon btn-horus__icon--checkin icon-center"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="18" height="16" viewBox="0 0 18 16"><g class="svg-color--primary" fill="#37454D"><path d="M16 1h-1c0-.552-.448-1-1-1s-1 .448-1 1H5c0-.552-.448-1-1-1S3 .448 3 1H2C.896 1 0 1.895 0 3v11c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2V3c0-1.105-.896-2-2-2zm1 13c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5h16v9zm0-10H1V3c0-.552.45-1 1-1h14c.552 0 1 .448 1 1v1z"></path><circle cx="4.5" cy="8.5" r="1.5"></circle></g></svg></span><span class="btn-horus__content"><span class="btn-horus__type">Check-in</span>
-                            <time class="btn-horus__value" datetime="2018-07-21">Saturday, 21-07-2018</time>
-                            </span>
-                        </button>
+            <section class="bottom-tags js-bottom-tags bottom-tags--toolbar">
+                <div class="tag-row">
+                    <h3 class="visuallyhidden">Filters</h3>
+                    <div class="filter-toolbar">
+                        <ul class="toolbar-list">
+                            <li class="toolbar-list__item toolbar-list__item--price">
+                                <div class="filter-item filter-item--price"><strong class="filter-item__label">Price</strong>
+                                    <div class="fl-slider">
+                                        <div class="fl-slider__labels clearfix">
+                                            <p class="fl-slider__label fl-slider__label--cur">max. ₹80,426</p>
+                                        </div>
+                                        <div class="fl-slider__slide-holder" tabindex="0">
+                                            <div class="fl-slider__holder"></div>
+                                            <label class="visuallyhidden" for="filter-toolbar-price-handle">Price</label>
+                                            <div role="slider" aria-labelledby="filter-toolbar-price-handle" aria-valuemin="1,154" aria-valuemax="80,426" aria-valuenow="80,426" aria-valuetext="₹80,426" class="fl-slider__handle" tabindex="0" style="left: 100%;"></div>
+                                            <div class="fl-slider__range" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="toolbar-list__item toolbar-list__item--stars">
+                                <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="All"><strong class="filter-item__label">Hotel class&nbsp;</strong><span class="filter-item__placeholder"><span class="icon-ic icon-contain filter-ic filter-ic--deco filter-ic--stars"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" baseProfile="tiny" viewBox="0 0 24 24"><path fill="#37454D" class="svg-color--primary" d="M21 10.8c-.1-.4-.4-.7-.8-.8l-5.4-.9L13 3.7c-.2-.4-.6-.7-1-.7s-.8.3-.9.7L9.2 9.1l-5.4.9c-.4.1-.7.4-.8.8s.1.8.5 1l4.3 2.6-1.7 5.2c-.1.4 0 .9.4 1.1.1.2.3.3.5.3s.4-.1.6-.2l4.4-3.5 4.4 3.5c.2.1.4.2.6.2.2 0 .4-.1.6-.2.4-.3.5-.7.4-1.1l-1.7-5.2 4.3-2.6c.3-.3.5-.7.4-1.1z"></path></svg></span><span class="filter-value">All</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
+                                </button>
+                            </li>
+                            <li class="toolbar-list__item toolbar-list__item--rating">
+                                <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="All"><strong class="filter-item__label">Guest rating&nbsp;</strong><span class="filter-item__placeholder"><span class="filter-value">All</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
+                                </button>
+                            </li>
+                            <li class="toolbar-list__item toolbar-list__item--location">
+                                <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="City centre/20 km"><strong class="filter-item__label">Hotel location&nbsp;</strong><span class="filter-item__placeholder"><span class="filter-value">City centre</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
+                                </button>
+                            </li>
+                            <li class="toolbar-list__item toolbar-list__item--more">
+                                <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="Select"><strong class="filter-item__label">More filters&nbsp;</strong><span class="filter-item__placeholder"><span class="filter-value">Select</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="horus__col horus__col--checkout">
-                        <button class="btn btn-horus horus__btn-detail horus__btn-detail--calendar btn-horus--checkout" type="button"><span class="icon-ic btn-horus__icon btn-horus__icon--checkout icon-center"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="18" height="16" viewBox="0 0 18 16"><g class="svg-color--primary" fill="#37454D"><path d="M16 1h-1c0-.552-.448-1-1-1s-1 .448-1 1H5c0-.552-.448-1-1-1S3 .448 3 1H2C.896 1 0 1.896 0 3v11c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2V3c0-1.104-.896-2-2-2zm1 13c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5h16v9zm0-10H1V3c0-.552.45-1 1-1h14c.552 0 1 .448 1 1v1z"></path><circle cx="13.5" cy="11.5" r="1.5"></circle></g></svg></span><span class="btn-horus__content"><span class="btn-horus__type">Check-out</span>
-                            <time class="btn-horus__value" datetime="2018-07-22">Sunday, 22-07-2018</time>
-                            </span>
-                        </button>
+                </div>
+            </section>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="well">
+                <h1 class="text-center">Available Chioces...</h1>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        <div class="media col-md-3">
+                            <figure class="pull-left">
+                                <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x250" alt="placehold.it/350x250">
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="list-group-item-heading"> List group heading </h4>
+                            <p class="list-group-item-text"> Qui diam libris ei, vidisse incorrupte at mel. His euismod salutandi dissentiunt eu. Habeo offendit ea mea. Nostro blandit sea ea, viris timeam molestiae an has. At nisl platonem eum. Vel et nonumy gubergren, ad has tota facilis probatus. Ea legere legimus tibique cum, sale tantas vim ea, eu vivendo expetendis vim. Voluptua vituperatoribus et mel, ius no elitr deserunt mediocrem. Mea facilisi torquatos ad.
+                            </p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h2> 14240 <small> INR </small></h2>
+                            <button type="button" class="btn btn-default btn-lg btn-block"> Book Now! </button>
+                            <div class="stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                            <p> Average 4.5 <small> / </small> 5 </p>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="media col-md-3">
+                            <figure class="pull-left">
+                                <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x250" alt="placehold.it/350x250">
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="list-group-item-heading"> List group heading </h4>
+                            <p class="list-group-item-text"> Eu eum corpora torquatos, ne postea constituto mea, quo tale lorem facer no. Ut sed odio appetere partiendo, quo meliore salutandi ex. Vix an sanctus vivendo, sed vocibus accumsan petentium ea. Sed integre saperet at, no nec debet erant, quo dico incorrupte comprehensam ut. Et minimum consulatu ius, an dolores iracundia est, oportere vituperata interpretaris sea an. Sed id error quando indoctum, mel suas saperet at.
+                            </p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h2> 12424 <small> INR </small></h2>
+                            <button type="button" class="bookbtn btn btn-danger btn-lg btn-block">Book Now!</button>
+                            <div class="stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                            <p> Average 3.9 <small> / </small> 5 </p>
+                        </div>
+                    </a>
+                    <style media="screen">
+                        .bookbtn {
+                            background: #4285F4;
+                            margin: 3px;
+                            padding: 5px;
+                            border-radius: 5px !important;
+                        }
+
+                        .bookbtn:hover {
+                            background: #0d47a1;
+                            color: black;
+                        }
+                    </style>
+                    <a href="#" class="list-group-item">
+                        <div class="media col-md-3">
+                            <figure class="pull-left">
+                                <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x250" alt="placehold.it/350x250">
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="list-group-item-heading"> List group heading </h4>
+                            <p class="list-group-item-text"> Ut mea viris eripuit theophrastus, cu ponderum accusata consequuntur cum. Suas quaestio cotidieque pro ea. Nam nihil persecuti philosophia id, nam quot populo ea. Falli urbanitas ei pri, eu est enim volumus, mei no volutpat periculis. Est errem iudicabit cu. At usu vocibus officiis, ad ius eros tibique appellantur.
+                            </p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h2> 13540 <small> votes </small></h2>
+                            <button type="button" class=" bookbtn btn btn-success btn-lg btn-block">Book Now!</button>
+                            <div class="stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                            <p> Average 4.1 <small> / </small> 5 </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="nb-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="about">
+                        <img src="images/logo.png" class="img-responsive center-block" alt="">
+                        <p>Bootstrap Footer example snippets with CSS, Javascript and HTML. Code example of bootstrap-3 footer using HTML, Javascript, jQuery, and CSS. 5 Beautiful and Responsive Footer Templates. Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+
+                        <div class="social-media">
+                            <ul class="list-inline">
+                                <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="horus__col horus__col--roomtype" key="roomsButton">
-                        <button class="btn btn-horus btn-horus--roomtype horus__btn-detail horus__btn-detail--roomtype" type="button"><span class="btn-horus__content-wrap"><span class="icon-ic btn-horus__icon icon-rtl"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="20" height="16" viewBox="0 0 20 16"><g class="svg-color--primary" fill="#37454D"><path d="M17.3 6.25c.45-.65.7-1.45.7-2.25 0-2.2-1.8-4-4-4-1.15 0-2.2.5-2.95 1.3.25.2.5.45.7.7.55-.65 1.35-1 2.25-1 1.65 0 3 1.35 3 3 0 .8-.3 1.5-.8 2-.55.6-1.35 1-2.2 1-.4 0-.8-.1-1.15-.25 0 .1-.05.15-.05.25-.05.2-.1.4-.2.6.2.1.4.2.55.3.25.05.55.1.85.1 1 0 1.9-.35 2.6-.95C18 7.3 19 8.55 19 10c0 .55-.45 1-1 1h-2.35c.1.3.2.65.25 1H18c1.1 0 2-.9 2-2 0-1.75-1.1-3.25-2.7-3.75z"></path><path d="M14.95 12.3c0-.05 0-.1-.05-.15v-.05-.05c0-.1-.05-.2-.05-.3-.05-.1-.05-.25-.1-.35s-.1-.25-.15-.35c-.05-.15-.1-.25-.2-.4-.2-.4-.45-.75-.75-1.05l-.3-.3c-.2-.2-.4-.35-.65-.5-.45-.3-1-.5-1.55-.65.05-.1.15-.2.2-.3.15-.2.25-.4.3-.6.05-.05.05-.15.1-.2 0-.05.05-.05.05-.1 0-.1.05-.15.05-.25.05-.15.1-.35.1-.5V6c0-.15.05-.35.05-.5 0-.95-.3-1.85-.8-2.55-.2-.3-.45-.6-.75-.8C9.7 1.4 8.65 1 7.5 1 5 1 3 3 3 5.5c0 .25 0 .45.05.7.05.15.05.35.1.5 0 .1.05.15.05.25.05.1.1.2.15.35l.3.6c.05.1.15.2.2.3-.55.15-1.05.35-1.55.65-.25.15-.45.3-.65.5l-.3.3c-.55.6-1 1.35-1.2 2.15-.05.2-.1.45-.15.75V13c0 1.65 1.35 3 3 3h9c1.65 0 3-1.35 3-3v-.45c-.05-.1-.05-.2-.05-.25zM7.5 2c1.05 0 1.95.45 2.6 1.15.55.6.9 1.45.9 2.35 0 .2 0 .45-.05.65 0 .1-.05.2-.1.35-.1.35-.25.7-.45 1-.15.2-.3.35-.45.5-.15.15-.3.25-.45.4-.4.25-.85.45-1.3.55-.25.05-.5.05-.7.05-.95 0-1.8-.4-2.45-1C4.4 7.35 4 6.5 4 5.5 4 3.55 5.55 2 7.5 2zM12 15H3c-1.1 0-2-.9-2-2 0-2.1 1.65-3.85 3.7-4 .75.65 1.75 1 2.8 1 .15 0 .35 0 .5-.05.35-.05.7-.1 1-.25.45-.15.9-.4 1.3-.75 1.35.1 2.5.9 3.15 2 .2.3.3.65.4 1 .1.3.15.65.15 1 0 1.15-.9 2.05-2 2.05z"></path></g></svg></span><span class="btn-horus__content"><span class="btn-horus__value">Double room</span></span>
-                            </span>
-                        </button>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title">Help Center</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title">Customer information</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title">Security & privacy</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
+                            <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-info-single">
+                        <h2 class="title">Payment</h2>
+                        <p>Sample HTML page with Twitter's Bootstrap. Code example of Easy Sticky Footer using HTML, Javascript, jQuery, and CSS. This bootstrap tutorial covers all the major elements of responsive</p>
+
                     </div>
                 </div>
             </div>
         </div>
-        <section class="bottom-tags js-bottom-tags bottom-tags--toolbar">
-            <div class="tag-row">
-                <h3 class="visuallyhidden">Filters</h3>
-                <div class="filter-toolbar">
-                    <ul class="toolbar-list">
-                        <li class="toolbar-list__item toolbar-list__item--price">
-                            <div class="filter-item filter-item--price"><strong class="filter-item__label">Price</strong>
-                                <div class="fl-slider">
-                                    <div class="fl-slider__labels clearfix">
-                                        <p class="fl-slider__label fl-slider__label--cur">max. ₹80,426</p>
-                                    </div>
-                                    <div class="fl-slider__slide-holder" tabindex="0">
-                                        <div class="fl-slider__holder"></div>
-                                        <label class="visuallyhidden" for="filter-toolbar-price-handle">Price</label>
-                                        <div role="slider" aria-labelledby="filter-toolbar-price-handle" aria-valuemin="1,154" aria-valuemax="80,426" aria-valuenow="80,426" aria-valuetext="₹80,426" class="fl-slider__handle" tabindex="0" style="left: 100%;"></div>
-                                        <div class="fl-slider__range" style="width: 100%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="toolbar-list__item toolbar-list__item--stars">
-                            <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="All"><strong class="filter-item__label">Hotel class&nbsp;</strong><span class="filter-item__placeholder"><span class="icon-ic icon-contain filter-ic filter-ic--deco filter-ic--stars"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" baseProfile="tiny" viewBox="0 0 24 24"><path fill="#37454D" class="svg-color--primary" d="M21 10.8c-.1-.4-.4-.7-.8-.8l-5.4-.9L13 3.7c-.2-.4-.6-.7-1-.7s-.8.3-.9.7L9.2 9.1l-5.4.9c-.4.1-.7.4-.8.8s.1.8.5 1l4.3 2.6-1.7 5.2c-.1.4 0 .9.4 1.1.1.2.3.3.5.3s.4-.1.6-.2l4.4-3.5 4.4 3.5c.2.1.4.2.6.2.2 0 .4-.1.6-.2.4-.3.5-.7.4-1.1l-1.7-5.2 4.3-2.6c.3-.3.5-.7.4-1.1z"></path></svg></span><span class="filter-value">All</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
-                            </button>
-                        </li>
-                        <li class="toolbar-list__item toolbar-list__item--rating">
-                            <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="All"><strong class="filter-item__label">Guest rating&nbsp;</strong><span class="filter-item__placeholder"><span class="filter-value">All</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
-                            </button>
-                        </li>
-                        <li class="toolbar-list__item toolbar-list__item--location">
-                            <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="City centre/20 km"><strong class="filter-item__label">Hotel location&nbsp;</strong><span class="filter-item__placeholder"><span class="filter-value">City centre</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
-                            </button>
-                        </li>
-                        <li class="toolbar-list__item toolbar-list__item--more">
-                            <button type="button" class="filter-item filter-item--select js-toolbar-hover-button" title="Select"><strong class="filter-item__label">More filters&nbsp;</strong><span class="filter-item__placeholder"><span class="filter-value">Select</span><span class="icon-ic icon-contain filter-ic filter-ic--state filter-ic--arrow fill-white"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="13" height="7" viewBox="0 0 13 7"><path class="svg-color--primary" fill="#37454D" d="M5.8 6.72L.32 1.822C-.094 1.472-.094.772.25.352c.342-.42 1.028-.42 1.44-.07l4.797 4.27L11.284.28c.412-.42 1.097-.35 1.44.07.412.42.342 1.12-.068 1.47L7.172 6.72c-.205.21-.412.28-.685.28-.274 0-.48-.07-.686-.28z"></path></svg></span></span>
-                            </button>
-                        </li>
-                    </ul>
+
+        <section class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h1>trivago</h1>
+                        <p>Copyright © 2017. Your Company.</p>
+                    </div>
+                    <div class="col-sm-6"></div>
                 </div>
             </div>
         </section>
-    </form>
-</div>
-<div class="container">
-<div class="row">
-<div class="well">
-    <h1 class="text-center">Available Chioces...</h1>
-    <div class="list-group">
-      <a href="#" class="list-group-item active">
-            <div class="media col-md-3">
-                <figure class="pull-left">
-                    <img class="media-object img-rounded img-responsive"  src="http://placehold.it/350x250" alt="placehold.it/350x250" >
-                </figure>
-            </div>
-            <div class="col-md-6">
-                <h4 class="list-group-item-heading"> List group heading </h4>
-                <p class="list-group-item-text"> Qui diam libris ei, vidisse incorrupte at mel. His euismod salutandi dissentiunt eu. Habeo offendit ea mea. Nostro blandit sea ea, viris timeam molestiae an has. At nisl platonem eum.
-                    Vel et nonumy gubergren, ad has tota facilis probatus. Ea legere legimus tibique cum, sale tantas vim ea, eu vivendo expetendis vim. Voluptua vituperatoribus et mel, ius no elitr deserunt mediocrem. Mea facilisi torquatos ad.
-                </p>
-            </div>
-            <div class="col-md-3 text-center">
-                <h2> 14240 <small> INR </small></h2>
-                <button type="button" class="btn btn-default btn-lg btn-block"> Book Now! </button>
-                <div class="stars">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                </div>
-                <p> Average 4.5 <small> / </small> 5 </p>
-            </div>
-      </a>
-      <a href="#" class="list-group-item">
-            <div class="media col-md-3">
-                <figure class="pull-left">
-                    <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x250" alt="placehold.it/350x250" >
-                </figure>
-            </div>
-            <div class="col-md-6">
-                <h4 class="list-group-item-heading"> List group heading </h4>
-                <p class="list-group-item-text"> Eu eum corpora torquatos, ne postea constituto mea, quo tale lorem facer no. Ut sed odio appetere partiendo, quo meliore salutandi ex. Vix an sanctus vivendo, sed vocibus accumsan petentium ea.
-                    Sed integre saperet at, no nec debet erant, quo dico incorrupte comprehensam ut. Et minimum consulatu ius, an dolores iracundia est, oportere vituperata interpretaris sea an. Sed id error quando indoctum, mel suas saperet at.
-                </p>
-            </div>
-            <div class="col-md-3 text-center">
-                <h2> 12424 <small> INR </small></h2>
-                <button type="button" class="bookbtn btn btn-danger btn-lg btn-block">Book Now!</button>
-                <div class="stars">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                </div>
-                <p> Average 3.9 <small> / </small> 5 </p>
-            </div>
-      </a>
-      <style media="screen">
-        .bookbtn{
-          background:#4285F4;
-          margin:3px;
-          padding:5px;
-          border-radius: 5px !important;
-        }
-        .bookbtn:hover{
-          background: #0d47a1;
-          color:black;
-        }
-      </style>
-      <a href="#" class="list-group-item">
-            <div class="media col-md-3">
-                <figure class="pull-left">
-                    <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x250" alt="placehold.it/350x250">
-                </figure>
-            </div>
-            <div class="col-md-6">
-                <h4 class="list-group-item-heading"> List group heading </h4>
-                <p class="list-group-item-text"> Ut mea viris eripuit theophrastus, cu ponderum accusata consequuntur cum. Suas quaestio cotidieque pro ea. Nam nihil persecuti philosophia id, nam quot populo ea.
-                    Falli urbanitas ei pri, eu est enim volumus, mei no volutpat periculis. Est errem iudicabit cu. At usu vocibus officiis, ad ius eros tibique appellantur.
-                </p>
-            </div>
-            <div class="col-md-3 text-center">
-                <h2> 13540 <small> votes </small></h2>
-                <button type="button" class=" bookbtn btn btn-success btn-lg btn-block">Book Now!</button>
-                <div class="stars">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                </div>
-                <p> Average 4.1 <small> / </small> 5 </p>
-            </div>
-      </a>
-    </div>
-    </div>
-  </div>
-</div>
-    <footer class="nb-footer">
-    <div class="container">
-    <div class="row">
-    <div class="col-sm-12">
-    <div class="about">
-    <img src="images/logo.png" class="img-responsive center-block" alt="">
-    <p>Bootstrap Footer example snippets with CSS, Javascript and HTML. Code example of bootstrap-3 footer using HTML, Javascript, jQuery, and CSS. 5 Beautiful and Responsive Footer Templates. Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
-
-    <div class="social-media">
-    <ul class="list-inline">
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-facebook"></i></a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-twitter"></i></a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-google-plus"></i></a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-linkedin"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-
-    <div class="col-md-3 col-sm-6">
-    <div class="footer-info-single">
-    <h2 class="title">Help Center</h2>
-    <ul class="list-unstyled">
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
-    </ul>
-    </div>
-    </div>
-
-    <div class="col-md-3 col-sm-6">
-    <div class="footer-info-single">
-    <h2 class="title">Customer information</h2>
-    <ul class="list-unstyled">
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
-    </ul>
-    </div>
-    </div>
-
-    <div class="col-md-3 col-sm-6">
-    <div class="footer-info-single">
-    <h2 class="title">Security & privacy</h2>
-    <ul class="list-unstyled">
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
-    <li><a href="http://www.nextbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
-    </ul>
-    </div>
-    </div>
-
-    <div class="col-md-3 col-sm-6">
-    <div class="footer-info-single">
-    <h2 class="title">Payment</h2>
-    <p>Sample HTML page with Twitter's Bootstrap. Code example of Easy Sticky Footer using HTML, Javascript, jQuery, and CSS. This bootstrap tutorial covers all the major elements of responsive</p>
-
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <section class="copyright">
-    <div class="container">
-    <div class="row">
-    <div class="text-center">
-    <h1>trivago</h1>
-    <p>Copyright © 2017. Your Company.</p>
-    </div>
-    <div class="col-sm-6"></div>
-    </div>
-    </div>
-    </section>
     </footer>
-  </body>
+</body>
+
 </html>
